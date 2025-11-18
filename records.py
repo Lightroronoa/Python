@@ -1,7 +1,9 @@
 import numpy as np
 
 students = []
-for i in range(11):
+students_number = int(input("enter the number of total students:"))
+
+for i in range(students_number):
     name = input("fill records:")
     students.append(name)
 
@@ -11,7 +13,7 @@ search_name = input("enter the name you want to search:")
 found = False
 for student in students:
     if student == search_name:
-        print("got it")
+        print("Found")
         found = True
         break
 
